@@ -442,7 +442,7 @@ inline float16x8_t vexpq_f16(float16x8_t x)
     return res;
 }
 
-inline float16x8_t vlogq_f16(float16x8_t x)
+static inline float16x8_t vlogq_f16(float16x8_t x)
 {
     // TODO (COMPMID-1535) : Revisit FP16 approximations
     const float32x4_t x_high = vcvt_f32_f16(vget_high_f16(x));
