@@ -46,7 +46,7 @@
  */
 
 #if defined(ARM_MATH_MVE_FLOAT16) && !defined(ARM_MATH_AUTOVECTORIZE) && defined(ARM_DSP_BUILT_WITH_GCC)
-#pragma GCC warning "Scalar version of arm_absmax_q7 built. Helium version has build issues with gcc."
+#pragma message "Scalar version of arm_absmax_q7 built. Helium version has build issues with gcc."
 #endif 
 
 
